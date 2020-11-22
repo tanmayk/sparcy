@@ -1,0 +1,13 @@
+name: Sparcy
+type: profile
+description: 'Build a site with pre-configured functionality for Sparcy.'
+version: VERSION
+core: 8.x
+install:
+  - block
+  - dblog
+  - dynamic_page_cache
+  - node
+  - page_cache
+themes:
+  - stark

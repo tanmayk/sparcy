@@ -1,0 +1,14 @@
+uuid: 65f9c21a-d0ec-4089-86de-9d7d15ac074d
+name: Sparcy
+mail: tanmay.khedekar01@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
