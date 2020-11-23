@@ -5,6 +5,7 @@ version: VERSION
 core: 8.x
 install:
   - block
+  - config
   - dblog
   - dynamic_page_cache
   - node
