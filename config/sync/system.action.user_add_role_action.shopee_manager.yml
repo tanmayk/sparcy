@@ -1,0 +1,14 @@
+uuid: 70247949-3511-4a61-8daa-92950fcd74e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.shopee_manager
+  module:
+    - user
+id: user_add_role_action.shopee_manager
+label: 'Add the Shopee Manager role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: shopee_manager

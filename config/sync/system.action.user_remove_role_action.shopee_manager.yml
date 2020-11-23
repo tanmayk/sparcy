@@ -1,0 +1,14 @@
+uuid: 6248ead2-1f93-45d0-86f2-d0243a04f523
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.shopee_manager
+  module:
+    - user
+id: user_remove_role_action.shopee_manager
+label: 'Remove the Shopee Manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: shopee_manager

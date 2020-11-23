@@ -1,0 +1,21 @@
+uuid: 04c3504f-db40-44f9-9364-74df76ed8ed7
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user_forms
+label: 'User Forms'
+code: "body.path-user .user-form-page .content-header {\n  padding-top: 0.5rem;\n  text-align: center;\n}\n\nbody.path-user .user-form-page__page-title {\n  font-size: 2rem;\n  margin-top: 1rem;\n  margin-bottom: 1rem;\n  text-align: center;\n}\n\nbody.path-user .page-content {\n  margin-bottom: 20px;\n}\n\n@media (max-width: 800px) {\n  body.path-user .user-form-page .content-header {\n    margin-bottom: 1rem;\n  }\n}"
+conditions_require_all: true
+conditions:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+contexts: {  }
+media: all
+preprocess: true

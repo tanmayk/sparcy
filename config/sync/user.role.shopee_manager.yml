@@ -1,0 +1,9 @@
+uuid: 73a93a2a-16a7-4db9-861f-4ce10096e333
+langcode: en
+status: true
+dependencies: {  }
+id: shopee_manager
+label: 'Shopee Manager'
+weight: 2
+is_admin: null
+permissions: {  }
