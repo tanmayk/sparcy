@@ -1,0 +1,22 @@
+uuid: 3e9e2279-69c3-4be1-bcab-fd2a538861f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.trader.trader
+id: trader.trader.default
+targetEntityType: trader
+bundle: trader
+mode: default
+content:
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

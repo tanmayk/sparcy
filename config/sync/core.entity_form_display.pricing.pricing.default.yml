@@ -8,6 +8,7 @@ dependencies:
     - field.field.pricing.pricing.field_brand
     - field.field.pricing.pricing.field_item_margin
     - field.field.pricing.pricing.field_max_retail_price
+    - field.field.pricing.pricing.field_trader
     - field.field.pricing.pricing.field_type
   module:
     - computed_field
@@ -17,33 +18,43 @@ bundle: pricing
 mode: default
 content:
   field_box_rate:
-    weight: 3
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: number
-    region: content
-  field_brand:
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_item_margin:
-    weight: 5
-    settings: {  }
-    third_party_settings: {  }
-    type: computed_number_widget
-    region: content
-  field_max_retail_price:
     weight: 4
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
-  field_type:
+  field_brand:
     weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_item_margin:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: computed_number_widget
+    region: content
+  field_max_retail_price:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_trader:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_type:
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_select

@@ -1,0 +1,19 @@
+uuid: bb8e74c4-1e29-4b00-ba83-34f8312a1aa8
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: pricing.field_trader
+field_name: field_trader
+entity_type: pricing
+type: entity_reference
+settings:
+  target_type: trader
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

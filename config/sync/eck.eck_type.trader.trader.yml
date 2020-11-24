@@ -1,0 +1,9 @@
+uuid: 90132c2f-dcef-42d4-a09c-54512faf5dd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.trader
+type: trader
+name: Trader
+description: ''

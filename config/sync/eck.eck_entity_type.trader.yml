@@ -1,0 +1,10 @@
+uuid: f8f0d2d2-1975-445d-afd8-81d477da5841
+langcode: en
+status: true
+dependencies: {  }
+id: trader
+label: Trader
+created: true
+changed: true
+uid: true
+title: true

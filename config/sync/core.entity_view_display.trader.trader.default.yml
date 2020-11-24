@@ -1,0 +1,23 @@
+uuid: 00e2cafa-8cd7-4816-866c-95369b98fdc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.trader.trader
+id: trader.trader.default
+targetEntityType: trader
+bundle: trader
+mode: default
+content:
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  uid: true

@@ -1,0 +1,25 @@
+uuid: ddc1389c-3b42-4141-877d-defb7f3bda8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.pricing.pricing
+    - field.storage.pricing.field_trader
+id: pricing.pricing.field_trader
+field_name: field_trader
+entity_type: pricing
+bundle: pricing
+label: Trader
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: traders
+      display_name: entity_reference_list
+      arguments: {  }
+field_type: entity_reference
