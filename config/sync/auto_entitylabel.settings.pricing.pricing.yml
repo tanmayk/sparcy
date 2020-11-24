@@ -1,0 +1,6 @@
+status: 1
+pattern: '[pricing:uid:entity:display-name] - [pricing:field_brand:entity:name] - [pricing:field_type:entity:name]'
+escape: false
+dependencies:
+  config:
+    - eck.eck_type.pricing.pricing

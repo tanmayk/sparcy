@@ -1,0 +1,8 @@
+name: 'SP Computed'
+description: 'Calculations required for computed fields.'
+package: Sparcy
+type: module
+core: 8.x
+version: 8.x-1.0
+dependencies:
+  - drupal:computed_field

@@ -1,0 +1,29 @@
+uuid: 0a9a5129-45e7-46b8-bcb4-3acd760f6566
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.pricing.pricing
+    - field.storage.pricing.field_type
+    - taxonomy.vocabulary.type
+id: pricing.pricing.field_type
+field_name: field_type
+entity_type: pricing
+bundle: pricing
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type: type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

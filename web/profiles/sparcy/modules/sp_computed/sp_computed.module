@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * Calculations required for computed fields.
+ */
+
+/**
+ * Implements hook_computed_field_FIELD_NAME_compute().
+ */
+function computed_field_field_item_margin_compute($entity_type_manager, $entity, $fields, $delta) {
+  // Item per box.
+  $item_type_tid = $fields['field_type'][0]['target_id'];
+  $item_type = $entity_type_manager->getStorage('taxonomy_term')->load($item_type_tid);
+  $items_per_box = $item_type->get('field_items_per_box')->getString();
+
+  // Box rate.
+  $box_rate = $fields['field_box_rate'][0]['value'];
+
+  // MRP.
+  $mrp = $fields['field_max_retail_price'][0]['value'];
+
+  // Actual box total.
+  $actual_box_total = $mrp * $items_per_box;
+
+  // Calculate margin per item.
+  $margin = ($actual_box_total - $box_rate) / $items_per_box;
+
+  return number_format($margin, 2);
+}

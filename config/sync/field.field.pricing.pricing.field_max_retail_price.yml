@@ -1,0 +1,23 @@
+uuid: 451ab288-c324-47e1-937f-7d5794690584
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.pricing.pricing
+    - field.storage.pricing.field_max_retail_price
+id: pricing.pricing.field_max_retail_price
+field_name: field_max_retail_price
+entity_type: pricing
+bundle: pricing
+label: MRP
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ₹
+  suffix: ''
+field_type: float

@@ -1,0 +1,31 @@
+uuid: 77546cc1-f360-453b-8ece-1918e182c7f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.type.field_items_per_box
+    - taxonomy.vocabulary.type
+  module:
+    - text
+id: taxonomy_term.type.default
+targetEntityType: taxonomy_term
+bundle: type
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_items_per_box:
+    weight: 1
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden: {  }

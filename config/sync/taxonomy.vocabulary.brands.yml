@@ -1,0 +1,8 @@
+uuid: 962ef85d-bcad-49c2-8c47-7c2bda0b4a1d
+langcode: en
+status: true
+dependencies: {  }
+name: Brands
+vid: brands
+description: 'Available brands in system.'
+weight: 0

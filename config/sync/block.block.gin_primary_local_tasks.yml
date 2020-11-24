@@ -2,6 +2,8 @@ uuid: c224ab1f-63c9-409e-80db-86524cd3e7c8
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - gin
 _core:
@@ -19,4 +21,9 @@ settings:
   label_display: '0'
   primary: true
   secondary: false
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/user\r\n/user/*"
+    negate: true
+    context_mapping: {  }

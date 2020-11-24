@@ -1,0 +1,20 @@
+uuid: da35bd88-901f-490c-a950-b8082a2a2613
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_items_per_box
+field_name: field_items_per_box
+entity_type: taxonomy_term
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

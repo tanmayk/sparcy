@@ -1,0 +1,10 @@
+uuid: de70ca17-626b-4c83-867f-32fc882cdf79
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+id: pricing.token
+label: Token
+targetEntityType: pricing
+cache: true

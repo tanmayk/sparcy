@@ -1,0 +1,61 @@
+uuid: 8b123c32-ca29-45ba-85d4-7c74ed76d26a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.pricing.pricing
+    - field.field.pricing.pricing.field_box_rate
+    - field.field.pricing.pricing.field_brand
+    - field.field.pricing.pricing.field_item_margin
+    - field.field.pricing.pricing.field_max_retail_price
+    - field.field.pricing.pricing.field_type
+  module:
+    - computed_field
+id: pricing.pricing.default
+targetEntityType: pricing
+bundle: pricing
+mode: default
+content:
+  field_box_rate:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_brand:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_item_margin:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: computed_number_widget
+    region: content
+  field_max_retail_price:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_type:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

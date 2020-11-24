@@ -6,4 +6,10 @@ id: shopee_manager
 label: 'Shopee Manager'
 weight: 2
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access shortcuts'
+  - 'access toolbar'
+  - 'create pricing entities'
+  - 'delete own pricing entities'
+  - 'edit own pricing entities'
+  - 'view own pricing entities'

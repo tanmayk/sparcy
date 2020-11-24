@@ -1,0 +1,23 @@
+uuid: adc36d40-1505-455e-9a5d-ab1c1610331b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_items_per_box
+    - taxonomy.vocabulary.type
+id: taxonomy_term.type.field_items_per_box
+field_name: field_items_per_box
+entity_type: taxonomy_term
+bundle: type
+label: 'Items Per Box'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

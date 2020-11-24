@@ -1,0 +1,23 @@
+uuid: 54963c59-5023-437f-a976-138d9bfe9b59
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.pricing.pricing
+    - field.storage.pricing.field_box_rate
+id: pricing.pricing.field_box_rate
+field_name: field_box_rate
+entity_type: pricing
+bundle: pricing
+label: 'Box Rate'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ₹
+  suffix: ''
+field_type: float

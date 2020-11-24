@@ -1,0 +1,20 @@
+uuid: 17355a59-b360-4401-98aa-c8c3ac9eb444
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - taxonomy
+id: pricing.field_type
+field_name: field_type
+entity_type: pricing
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

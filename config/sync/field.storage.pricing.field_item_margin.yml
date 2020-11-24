@@ -1,0 +1,19 @@
+uuid: 4ac00377-1b73-4c92-b388-0aca7ee523ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - computed_field
+    - eck
+id: pricing.field_item_margin
+field_name: field_item_margin
+entity_type: pricing
+type: computed_float
+settings: {  }
+module: computed_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

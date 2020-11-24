@@ -17,12 +17,17 @@
     "require": {
         "composer/installers": "^1.2",
         "drupal/asset_injector": "^2.7",
+        "drupal/auto_entitylabel": "^3.0@beta",
+        "drupal/computed_field": "^2.0",
         "drupal/config_ignore": "^2.2",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/eck": "^1.0@beta",
         "drupal/gin": "^3.0",
-        "drupal/gin_login": "^1.0@RC"
+        "drupal/gin_login": "^1.0@RC",
+        "drupal/realname": "^1.0@RC",
+        "drupal/token": "^1.7"
     },
     "conflict": {
         "drupal/drupal": "*"

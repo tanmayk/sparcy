@@ -1,0 +1,29 @@
+uuid: 92fb46ce-868a-4e9c-9afe-b461913e31f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.pricing.pricing
+    - field.storage.pricing.field_brand
+    - taxonomy.vocabulary.brands
+id: pricing.pricing.field_brand
+field_name: field_brand
+entity_type: pricing
+bundle: pricing
+label: Brand
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      brands: brands
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

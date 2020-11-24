@@ -1,0 +1,10 @@
+uuid: ad0e9160-0699-4646-b8ea-8e7bd4fd40b8
+langcode: en
+status: true
+dependencies: {  }
+id: pricing
+label: Pricing
+created: true
+changed: true
+uid: true
+title: true

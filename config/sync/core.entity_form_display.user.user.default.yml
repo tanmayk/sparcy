@@ -1,0 +1,33 @@
+uuid: 176a8092-20bb-4b86-9bc6-9d9bf3f59d53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_display_name
+  module:
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_display_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  timezone:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  language: true

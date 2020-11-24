@@ -1,0 +1,9 @@
+uuid: 6c35b6a2-ecd3-40c3-9069-d7a49e93a3cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.pricing
+type: pricing
+name: Pricing
+description: ''

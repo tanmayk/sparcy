@@ -1,0 +1,8 @@
+uuid: 3c3d5b6f-d2c6-4469-b997-557c6e63a139
+langcode: en
+status: true
+dependencies: {  }
+name: Type
+vid: type
+description: 'Type of brand item.'
+weight: 0
