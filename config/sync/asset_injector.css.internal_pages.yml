@@ -1,0 +1,21 @@
+uuid: 558690a7-b65e-4b0d-94ae-0ed53ad8e566
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: internal_pages
+label: 'Internal Pages'
+code: ".views-table caption {\n  text-align: center;\n  font-size: 1.4em;\n  font-weight: 900;\n}"
+conditions_require_all: true
+conditions:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: true
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+contexts: {  }
+media: all
+preprocess: true
